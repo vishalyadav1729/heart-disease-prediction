@@ -29,6 +29,8 @@ Source: UCI Machine Learning Repository
 - Decision Tree
 - Random Forest
 
+The logistic regression model classified 49 out of 60 test cases correctly, giving an accuracy of about 81.7%. It correctly identified 27 patients without disease and 22 patients with disease, but it also produced 5 false positives and 6 false negatives, so the main concern is that it still missed some real disease cases. In a health-related classification task, those false negatives matter because they are cases where the model predicted “no disease” even though disease was actually present.
+
 ## Evaluation Metrics
 - Accuracy
 - Precision
@@ -38,9 +40,10 @@ Source: UCI Machine Learning Repository
 - Confusion Matrix
 
 ## Key Findings
-- ...
-- ...
-- ...
+- the baseline model performed worst, as expected
+- the real models learned useful patterns from the features
+- logistic regression provided a strong interpretable baseline
+- random forest may provide stronger performance, depending on the split
 
 ## How to Run
 1. Install requirements
